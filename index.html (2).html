@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComédiaFlix - Vídeos</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            font-size: 2rem;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .video-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .video-container::-webkit-scrollbar-thumb {
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        .video-item {
+            flex: 0 0 auto;
+            max-width: 640px; /* Ajustado para maior largura */
+        }
+
+        iframe {
+            width: 100%;
+            height: 360px; /* Ajustado para maior altura */
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+
+        .video-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .video-item {
+                max-width: 100%;
+            }
+
+            iframe {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ComédiaFlix</h1>
+    </header>
+
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/2_mFf_6eET4?si=ewkeKFgmKfCM_5HK" 
+            title="Tiringa e o Curupira" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Tiringa e o Curupira</div>
+        </div>
+
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/uZraLxrkiYY?si=3tuhkdowURDkeEpR" 
+            title="Tiringa descobre Tõe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Tiringa descobre Tõe</div>
+        </div>
+
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/A4R4ekoW-6Y?si=ott6MBgEuktKo44i" 
+            title="Bluezao nostalgia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Bluezao nostalgia</div>
+        </div>
+
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/gEUDppTYHvc?si=pS86WmvXBtOkaWqp" 
+            title="Peguei o trator e fui demolir a casa do brutinho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Peguei o trator e fui demolir a casa do brutinho</div>
+        </div>
+
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/jaYONVA9rOU?si=nSPDrFUgoH4Xd0Jz" 
+            title="bluezao tentando quebrar pedra na cabeça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">bluezao tentando quebrar pedra na cabeça</div>
+        </div>
+
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/P_hiE7jCr9w?si=2sGJl90zqNoljZ5v" 
+            title="Brutinho pegou seu pai no quarto com dois homens" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">Brutinho pegou seu pai no quarto com dois homens</div>
+        </div>
+    </div>
+
+</body>
+</html>
